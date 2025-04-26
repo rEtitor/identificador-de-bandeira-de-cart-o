@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Identificar Bandeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="checkout">
+
+        <h1 class="fisttext">Identificar Bandeira do Cartão</h1>
+
+        <form id="cardForm">
+            <div class="input-group card-icon-container">
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Número do Cartão" required>
+                <div id="cardIcon" class="card-icon"></div>
+            </div>
+            <div class="input-group">
+                <input type="text" id="cardName" name="cardName" placeholder="Nome (igual no cartão)" required>
+            </div>
+            <div class="input-row">
+                <!-- Validade com formato MM/AAAA -->
+                <input type="text" id="validity" name="validity" placeholder="MM/AAAA" maxlength="7" required>
+                <!-- CVV com limite de 3 caracteres e apenas números -->
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3" required>
+                <select id="installments" name="installments" required>
+                    <option value="" disabled selected>Parcelas</option>
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                </select>
+            </div>
+            
+        </form>
+        <div id="result">
+            <span></span>
+        </div>
+    </div>
+    <script src="/cardsadm.js"></script>
+</main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/bg-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.checkout {
+    background: rgba(0, 0, 0, 0.438);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(53, 14, 14, 0);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-icon-container input {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.card-icon {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-icon.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card-icon.hide {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-icon.visa {
+    background-image: url('/img/Visa.png');
+}
+
+.card-icon.mastercard {
+    background-image: url('/img/MasterCard.png');
+}
+
+.card-icon.elo {
+    background-image: url('/img/Elo.png');
+}
+
+.card-icon.amex {
+    background-image: url('/img/americanexpress.png');
+}
+
+.card-icon.discover {
+    background-image: url('/img/Discover.png');
+}
+
+.card-icon.hipercard {
+    background-image: url('/img/hipercard.png');
+}
+
+.card-icon.jcb {
+    background-image: url('/img/JCB.png');
+}
+
+.fisttext {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
