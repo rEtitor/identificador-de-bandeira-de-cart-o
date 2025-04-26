@@ -139,14 +139,7 @@ button:hover {
     margin-top: -10px;
 }
 
-#cardIcon {
-    width: 40px; /* Ajuste o tamanho conforme necessário */
-    height: 40px;
-    background-image: url('/img/iconcard.png'); /* Substitua pelo caminho da sua imagem */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 
 
